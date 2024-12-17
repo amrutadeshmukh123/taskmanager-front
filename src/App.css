@@ -1,38 +1,197 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* .header{
+  width: 100%;
+  height: 60px;
+  padding: 10px 5%;
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  justify-content: space-between;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.24);
+
+} */
+/* .header h2{
+  font-size: 22px;
   color: white;
 }
+.header .links{
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 30px;
+}
+.header .links a{
+  text-decoration: none;
+  color: white;
+  padding: 3px 8px;
+  font-weight: 550;
+}
+.header .links .active{
+  text-align: center;
+  background: white;
+  border: 2px solid white;
+  border-radius: 3px;
+  font-weight: bold;
+  color: black;
+} */
 
-.App-link {
-  color: #61dafb;
+.links{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.links .one{
+  width: 50%;
+  height: 100%;
+  background: #a9eef3;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  padding-right: 30px;
+}
+.links .one button{
+  width: 130px;
+  height: 45px;
+  background: #FAB12F;
+  border: 2px solid #FAB12F;
+  border-radius: 20px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.315);
+}
+.links .one button a{
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  font-size: 16px;
+}
+.links .two{
+  width: 50%;
+  height: 100%;
+  background: #FCF596;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  padding-left: 30px;
+}
+.links .two button{
+  width: 130px;
+  height: 45px;
+  background: #78B3CE;
+  border: 2px solid #78B3CE;
+  color: black;
+  border-radius: 20px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.315);
+}
+.links .two button a{
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  font-size: 16px;
+}
+.container1{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: #B9E5E8;
+}
+.container1 .box form{
+  width: 450px;
+  padding: 30px 30px;
+  margin: 0px auto;
+  margin-top: 160px;
+  background: white;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.438);
+  border-radius: 10px;
+  overflow: hidden;
+} 
+.box form .title{
+  width: 100%;
+  height: 50px;
+  text-align: center;
+}
+.box form .input-field{
+  width: 100%;
+  margin: 26px 0px;
+  transition: all ease-in 0.4s;
+}
+.box form .input-field:focus-within label{
+  width: 100%;
+  color: #007C9D;
+}
+form p{
+  width: 100%;
+  margin-top: 0px;
+  padding: 5px 0px;
+  color: red;
+  font-weight: 600;
+  font-size: 12px;
+  text-align: start;
+}
+.box form .input-field label{
+  width: 40%;
+  font-weight: 530;
+  font-size: 14px;
+  text-align: end;
+  padding: 6px;
+}
+form .input-field input,
+form .input-field select{
+  width: 100%;
+  padding: 6px;
+  margin-bottom: 5px;
+  border-radius: 5px;
+  border: 2px solid rgba(0, 0, 0, 0.215);
+  outline: none;
+  transition: all ease-in 0.4s;
+  margin-top: 6px !important;
+}
+form .input-field:focus-within input,
+form .input-field:focus-within select{
+  border: 2px solid #007C9D;
+  background: rgba(70, 131, 180, 0.336);
+  font-weight: 560;
+  color: black;
+}
+form button{
+  width: 100%;
+  margin-top: 10px;
+  padding: 8px;
+  outline: none;
+  border: 2px solid #007C9D;
+  background: #007C9D;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 17px;
+  font-weight: 600;
+}
+form button:active{
+  color: steelblue;
+  background: whitesmoke;
+  border: 2px solid steelblue;
+}
+.container1 .btn{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10%;
+  margin-top: 50px;
+}
+.container1 .btn button:first-child{
+  padding: 10px 25px;
+  outline: none;
+  background: #007C9D;
+  border: 2px solid #007C9D;
+  cursor: pointer;
+  border-radius: 10px;
+}
+.container1 .btn button:last-child{
+  padding: 10px 25px;
+  outline: none;
+  background: #FAB12F;
+  border: 2px solid #FAB12F;
+  cursor: pointer;
+  border-radius: 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
