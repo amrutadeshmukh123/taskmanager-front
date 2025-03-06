@@ -18,7 +18,7 @@ export default function DeleteTask() {
         setLoadingMessage("Deleting Task...")
         setLoading(true)
         setTimeout(async() => {           
-                const res = await axios.delete(`https://back-end-theta-sandy.vercel.app/api/deleteTask/${id}`)
+                const res = await axios.delete(`https://taskmanager-backend-new.vercel.app/api/deleteTask/${id}`)
                 const resData = res.data
                 if (resData.status) {
                     toast.success("Task deleted successfully !!")

@@ -10,11 +10,18 @@ export default function ViewTask() {
     const navigate = useNavigate()
 
     const [userSearch,setUserSearch] = useState('')
-    const filteredData = data.filter((item) => {
+    console.log(data)
+    const filteredData =  data.filter((item) => {
         return userSearch.toLowerCase() === '' 
             ? item 
             : item.taskName.toLowerCase().includes(userSearch.toLowerCase());
     });
+    // const filteredData = data.filter((item) => {
+        
+    //     return userSearch.toLowerCase() === '' 
+    //         ? item 
+    //         : item.taskName.toLowerCase().includes(userSearch.toLowerCase());
+    // });
 
     const users = data
     const itemPerPage = 6
@@ -36,7 +43,7 @@ export default function ViewTask() {
    
 
     const fetchData = async () => {
-        const response = await axios.get("https://back-end-theta-sandy.vercel.app/api/getTask")
+        const response = await axios.get("https://taskmanager-backend-new.vercel.app/api/getTask")
         setdata(response.data.message)
         
     }

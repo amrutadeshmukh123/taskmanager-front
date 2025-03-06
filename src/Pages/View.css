@@ -145,6 +145,141 @@
     cursor: pointer;
     border-radius: 10px;   
   }
+
+
+  @media screen and (max-width: 1024px) {
+    .container2 {
+      height: 100vh;
+      padding: 20px;
+    }
+  
+    .container2 .input-field {
+      width: 80%;
+      padding: 8px;
+      margin: 0 auto;
+    }
+  
+    .container2 .input-field label {
+      width: 100%;
+      margin-left: 0;
+      text-align: left;
+      font-size: 15px;
+    }
+  
+    .container2 .input-field input {
+      width: 100%;
+      margin-left: 0;
+      padding: 8px;
+      font-size: 14px;
+    }
+  
+    .container2 table {
+      width: 90%;
+      margin-top: 15px;
+    }
+  
+    .container2 table th {
+      font-size: 16px;
+      padding: 15px;
+    }
+  
+    .container2 table tbody td {
+      font-size: 14px;
+      padding: 10px;
+    }
+  
+    .container2 .pagination {
+      width: 100%;
+      justify-content: center;
+    }
+  
+    .container2 .pagination button,
+    .container2 .pagination .active-page {
+      width: 30px;
+      height: 30px;
+    }
+  
+    .container2 .btn1 {
+      flex-direction: column;
+      gap: 15px;
+    }
+  
+    .container2 .btn1 button {
+      width: 80%;
+      padding: 12px;
+      font-size: 16px;
+    }
+  }
+  
+  
+  @media screen and (max-width: 768px) {
+    .container2 {
+      padding: 10px;
+    }
+  
+    .container2 .input-field {
+      width: 95%;
+    }
+  
+    .container2 .input-field label {
+      font-size: 14px;
+    }
+  
+    .container2 .input-field input {
+      font-size: 13px;
+      padding: 6px;
+    }
+  
+    .container2 table {
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+    }
+  
+    .container2 table thead {
+      font-size: 14px;
+    }
+  
+    .container2 table th {
+      font-size: 14px;
+      padding: 10px;
+    }
+  
+    .container2 table tbody td {
+      font-size: 13px;
+      padding: 8px;
+    }
+  
+    .container2 table tbody td .action-btn {
+      gap: 20px;
+    }
+  
+    .container2 table tbody td .action-btn a {
+      font-size: 16px;
+    }
+  
+    .container2 .pagination {
+      justify-content: center;
+      margin-top: 10px;
+    }
+  
+    .container2 .pagination button,
+    .container2 .pagination .active-page {
+      width: 25px;
+      height: 25px;
+    }
+  
+    .container2 .btn1 {
+      flex-direction: row;
+      gap: 10px;
+    }
+  
+    .container2 .btn1 button {
+      width: 60%;
+      font-size: 14px;
+      padding: 30px;
+    }
+  }
   
 
   

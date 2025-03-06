@@ -35,8 +35,8 @@ export default function AddTask() {
             setLoadingMessage("Adding task...")
             setLoading(true)
             setTimeout(async () => {
-                const res = await axios.post('https://back-end-theta-sandy.vercel.app/api/addTask', data, {
-                    'content-Type': 'application/json'
+                const res = await axios.post('https://taskmanager-backend-new.vercel.app/api/addTask', data, {
+                    headers: {'Content-Type': 'application/json'}
 
                 })
                 const resData = res.data
@@ -54,8 +54,8 @@ export default function AddTask() {
             setLoadingMessage("Updating Task...")
             setLoading(true)
             setTimeout(async () => {
-                const res = await axios.put(`https://back-end-theta-sandy.vercel.app/api/updateTask/${id}`, data, {
-                    'content-Type': 'application/json'
+                const res = await axios.put(`https://taskmanager-backend-new.vercel.app/api/updateTask/${id}`, data, {
+                    headers: {'Content-Type': 'application/json'}
     
                 })
                 const resData = res.data
@@ -80,7 +80,7 @@ export default function AddTask() {
         setLoadingMessage("Getting Task...")
         setLoading(true)
         setTimeout(async () => {
-            const res = await axios.get(`https://back-end-theta-sandy.vercel.app/api/getTask/${id}`)
+            const res = await axios.get(`https://taskmanager-backend-new.vercel.app/api/getTask/${id}`)
             const resData = res.data
             setLoading(false)
             if (resData.status) {
@@ -123,7 +123,7 @@ export default function AddTask() {
                             <select {...register('taskStatus', {
                                 required: '*Status is mandatory !'
                             })}>
-                                <option value='' selected>Select your status</option>
+                                <option value=''>Select your status</option>
                                 {/* <option value='pending'>Pending</option>
                                 <option value='completed'>Completed</option> */}
                                 {
